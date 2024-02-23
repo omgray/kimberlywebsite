@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +9,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
   body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
@@ -18,19 +21,19 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #2c4099; /* Navy */
+    background-color: #30446d; /* Navy */
     color: #ffffff;
   }
   .bg-2 { 
-    background-color: #fce3e3; /* Dark Blush */
+    background-color: #fff9f9; /* Dark Blush */
     color: #7e5858;
   }
   .bg-3 { 
     background-color: #ffcfcf; /* Blush Pink */
-    color: #555555;
+    color: #000000;
   }
   .bg-4 { 
-    background-color: #112260; /* Dark Navy */
+    background-color: #30446d; /* Dark Navy */
     color: #fff;
   }
   .container-fluid {
@@ -45,6 +48,7 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    color: #000000;
   }
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
@@ -57,11 +61,40 @@
     width: auto;
   }
   .header-img {
-    width: 20% !important;
+    width: 80% !important;
   }
+.logo {
+  height: auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .header-img {
+    width: 30% !important;
+  }
+  .logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.container-fluid {
+  padding: 15px !important;
+}
+.img-container {
+  text-align: center;
+  justify-content: center;
+}
+.navbar-brand, .navbar-nav, .navbar-brand, .navbar-nav>li>a {
+  color: #000000 !important;
+}
   </style>
 </head>
 <body>
+<!-- Jumbotron -->
+<div class="container-fluid navbar-default">
+  <div class="img-container">
+    <img src="images/logo.png" alt="" class="logo">
+  </div>
+</div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -72,13 +105,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Beyond The Couch</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
       </ul>
     </div>
   </div>
@@ -86,35 +119,62 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="images/kim3.JPG" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="200" height="200">
-  <h3>I'm an adventurer</h3>
+  <h3 class="margin">Meet The Therapist:</h3>
+  <img src="images/kim3.JPG" class="img-responsive img-circle margin header-img" style="display:inline" alt="Bird">
+  <h3>About Me:</h3>
+  <p>Kimberly McCray, a Licensed Mental Health Counselor based in South Florida, brings over 7 years of
+    expertise. Holding a Bachelors degree in Sociology from the University of South Florida and a Masters
+    degree in Counseling with a concentration in Mental Health from Nova Southeastern University, Kimberly
+    employs a collaborative, strength-based approach. She works to empower clients, allowing them to be
+    the authors of their own lives. Emphasizing the significance of the therapeutic relationship, Kimberly
+    values building rapport with individuals and supporting their families.</p>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <h3 class="margin">My Passion:</h3>
+  <p>As a kidney transplant recipient, Kimberly is passionately dedicated to promoting healing in those
+    grappling with chronic illnesses. Recognizing the complexities and challenges of navigating limitations
+    imposed by chronic illness, she strives to help individuals normalize their experiences in a way that
+    maintains connections with others. Rejecting the idea that an individual should identify solely with their
+    disorder, she sees it as just one facet among many other important parts of who they are.</p>
   <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
+    <span class="glyphicon glyphicon-book"></span> Book Now!
   </a>
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin">Areas of Practice:</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="images/kim2.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Chronic Illnesses:</h3>
+      <p>Therapy for chronic illnesses can offer substantial benefits to individuals
+        contending with prolonged diseases, chronic pain, and other enduring conditions. Chronic
+        illnesses, characterized by their long-term nature, persist over an individual's lifetime. These
+        conditions typically arise from intricate causes and may result in impairment, pain, or disability,
+        influencing a person's perspective on the world and altering their thoughts, emotions, and
+        behaviors. Living with chronic illnesses can limit engagement in school or work, impact
+        relationships, and pose challenges to regular activities.</p>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="images/kim1.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Life Transitions:</h3>
+      <p>Life is an ongoing sequence of transitions. Navigating change can be
+        challenging, as even positive life shifts often induce stress. An adjustment disorder emerges
+        as a potent emotional or behavioral response to stress or trauma, resulting in short-term
+        symptoms that may elicit more intense reactions than usual. This can manifest in easily
+        triggered tears, feelings of depression and hopelessness, or engaging in risky, reckless, or
+        impulsive behaviors. The specific behaviors and emotions experienced vary from person to
+        person.</p>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="images/kim4.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Depression:</h3>
+      <p>Depressive disorder goes beyond experiencing sadness or facing a difficult
+        phase; it represents a significant mental health condition. The encouraging news is that it is
+        treatable. Depression ranks among the most prevalent mental disorders in the US and, for
+        certain individuals, may lead to impairments restricting their ability to perform essential life
+        activities. This condition introduces various emotional and physical challenges, impacting
+        one's effectiveness in both work and home environments.</p>
     </div>
   </div>
 </div>
