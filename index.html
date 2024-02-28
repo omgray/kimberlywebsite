@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Beyond The Couch</title>
+  <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #30446d; /* Navy */
+    background-color: #1b2b4d; /* Navy */
     color: #ffffff;
   }
   .bg-2 { 
@@ -33,7 +33,7 @@
     color: #000000;
   }
   .bg-4 { 
-    background-color: #30446d; /* Dark Navy */
+    background-color: #1b2b4d; /* Dark Navy */
     color: #fff;
   }
   .container-fluid {
@@ -60,14 +60,14 @@
     height: 75%;
     width: auto;
   }
-  .header-img {
-    width: 80% !important;
-  }
 .logo {
   height: auto;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+.header-img {
+  width: 50%;
+}
+@media screen and (min-width: 700px) {
   .header-img {
     width: 30% !important;
   }
@@ -85,6 +85,9 @@
 }
 .navbar-brand, .navbar-nav, .navbar-brand, .navbar-nav>li>a {
   color: #000000 !important;
+}
+h2 {
+  font-weight: 600;
 }
   </style>
 </head>
@@ -109,8 +112,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
+        <li><a href="https://provider.growtherapy.com/book-appointment?id=25122&utm_source=provider-sourced&utm_medium=booking-link&utm_campaign=provider-dashboard">Link 1</a></li>
+        <li><a href="https://www.psychologytoday.com/us/therapists/kimberly-mccray-boynton-beach-fl/1173246?preview=1&return_to=https://member.psychologytoday.com/us/profile">Link 2</a></li>
         <li><a href="#">Link 3</a></li>
       </ul>
     </div>
@@ -119,9 +122,9 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Meet The Therapist:</h3>
-  <img src="images/kim3.JPG" class="img-responsive img-circle margin header-img" style="display:inline" alt="Bird">
-  <h3>About Me:</h3>
+  <h2 class="margin">Meet The Therapist:</h2>
+  <img src="images/kim3.JPG" class="img-responsive margin header-img" style="display:inline" alt="Bird">
+  <h2>About Me:</h2>
   <p>Kimberly McCray, a Licensed Mental Health Counselor based in South Florida, brings over 7 years of
     expertise. Holding a Bachelors degree in Sociology from the University of South Florida and a Masters
     degree in Counseling with a concentration in Mental Health from Nova Southeastern University, Kimberly
@@ -132,7 +135,7 @@
 
 <!-- Second Container -->
 <div class="container-fluid bg-3 text-center">
-  <h3 class="margin">My Passion:</h3>
+  <h2 class="margin">My Passion:</h2>
   <p>As a kidney transplant recipient, Kimberly is passionately dedicated to promoting healing in those
     grappling with chronic illnesses. Recognizing the complexities and challenges of navigating limitations
     imposed by chronic illness, she strives to help individuals normalize their experiences in a way that
@@ -142,10 +145,10 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-2 text-center">    
-  <h3 class="margin">Areas of Practice:</h3><br>
+  <h2 class="margin">Areas of Practice:</h2><br>
   <div class="row">
     <div class="col-sm-4">
-      <h3>Chronic Illnesses:</h3>
+      <h2>Chronic Illness:</h2>
       <p>Therapy for chronic illnesses can offer substantial benefits to individuals
         contending with prolonged diseases, chronic pain, and other enduring conditions. Chronic
         illnesses, characterized by their long-term nature, persist over an individual's lifetime. These
@@ -155,7 +158,7 @@
         relationships, and pose challenges to regular activities.</p>
     </div>
     <div class="col-sm-4"> 
-      <h3>Life Transitions:</h3>
+      <h2>Life Transitions:</h2>
       <p>Life is an ongoing sequence of transitions. Navigating change can be
         challenging, as even positive life shifts often induce stress. An adjustment disorder emerges
         as a potent emotional or behavioral response to stress or trauma, resulting in short-term
@@ -165,7 +168,7 @@
         person.</p>
     </div>
     <div class="col-sm-4"> 
-      <h3>Depression:</h3>
+      <h2>Depression:</h2>
       <p>Depressive disorder goes beyond experiencing sadness or facing a difficult
         phase; it represents a significant mental health condition. The encouraging news is that it is
         treatable. Depression ranks among the most prevalent mental disorders in the US and, for
@@ -178,7 +181,7 @@
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-3 text-center">    
-<h3 class="margin">Services:</h3>
+<h2 class="margin">Services:</h2>
   <div class="col-sm-6">
     <div class="container-fluid bg-3 text-center">
       <h4>Self Pay Session Rate</h4>
@@ -195,16 +198,17 @@
   <p></p>
   <div class="col-sm-12">
     <p>Insurance Accepted</p>
-    <a href="#" class="btn btn-default btn-lg">
+    <a href="https://provider.growtherapy.com/book-appointment?id=25122&utm_source=provider-sourced&utm_medium=booking-link&utm_campaign=provider-dashboard" class="btn btn-default btn-lg">
       <span class="glyphicon glyphicon-book"></span> Book Now!
-    </a>
+    </a><br><br>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-1 text-center">
-  <p>Theme Designed by Ray</a></p>
-  <p>Links for Social:</p>
+  <p>Location: Boynton Beach, Florida</p>
+  <p>Phone: 561-568-8682</p> 
+  <p>Email: kimberly@beyond-the-couch.com</p>
 </footer>
 
 </body>
